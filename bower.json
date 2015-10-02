@@ -1,0 +1,22 @@
+{
+  "name": "scalejs.editor-ace",
+  "version": "0.0.0",
+  "homepage": "",
+  "authors": [],
+  "description": "",
+  "main": [
+    "dist/scalejs.editor-ace.js"
+  ],
+  "ignore": [
+    "*",
+    "!dist/*.js"
+  ],
+  "dependencies": {
+    "ace": "~1.2.0",
+    "scalejs": "lisovin/scalejs",
+    "scalejs.mvvm": "lisovin/scalejs.mvvm#dev"
+  },
+  "devDependencies": {
+    "requirejs": "latest"
+  }
+}
