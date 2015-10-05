@@ -1,4 +1,3 @@
-
 /*
  *  Based on code from:
  *
@@ -24423,17 +24422,13 @@ exports.UndoManager = UndoManager;
 });
 
 define('scalejs.editor-ace',[
-    'scalejs!core',
     'knockout',
     'ace/ace'
 ], function (
-    core,
     ko,
     ace
 ) {
     'use strict';
-
-    //ace.config.set("basePath", "Scripts/ace");
 
     function init(
         element,
@@ -24482,12 +24477,7 @@ define('scalejs.editor-ace',[
                 }
             });
         }
-
-        if (core.layout && core.layout.onLayoutDone) {
-            disposeLayout = core.layout.onLayoutDone(function () {
-                editor.resize();
-            });
-        }
+        
         ko.utils.domNodeDisposal.addDisposeCallback(element, function () {
             if (disposeLayout) {
                 disposeLayout();
