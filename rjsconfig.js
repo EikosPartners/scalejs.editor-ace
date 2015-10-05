@@ -1,11 +1,6 @@
 'use strict';
 /*jshint ignore:start*/
 var require = {
-  scalejs: {
-    extensions: [
-      '<%=ext_name%>'
-    ]
-  },
   paths: {
     ace: '../bower_components/ace/lib/ace',
     requirejs: '../bower_components/requirejs/require',
